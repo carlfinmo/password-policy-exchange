@@ -1,5 +1,9 @@
-# password-policy-exchange
+# What
 A password policy specification language and evaluator
+
+# Motivating idea
+Allow a single source of truth for password policy specification
+that can be synchronized/shared.
 
 # Status
 Exploratory
