@@ -16,7 +16,12 @@ policyText = """
 CheckLengthV1 10; CheckSpecialsV1 2
 CheckLengthV1 20
 """
-passPr = parseTextPol(policyText)
-print("pol3 <passphrase len=20+>", polEval(pol3, passphrase)) # True
-print("pol3 <passphrase len=20+>", polEval(pol3, passphrase)) # False
+
+password1 = "password"
+password10 = "password!!"
+passpharse = "horse-battery-staple-correct"
+policy = parseTextPol(policyText)
+print(polEval(policy, password1))  # False
+print(polEval(policy, password10))  # True
+print(polEval(policy, passpharse))  # True
 ```
